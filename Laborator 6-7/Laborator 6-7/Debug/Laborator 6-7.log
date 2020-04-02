@@ -1,0 +1,9 @@
+﻿  Laborator 6-7.cpp
+C:\Users\Andrei\source\repos\Laborator 6-7\Laborator 6-7\Tests.h(55,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\Laborator 6-7\Laborator 6-7\Tests.h(64,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\Laborator 6-7\Laborator 6-7\Tests.h(73,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\Laborator 6-7\Laborator 6-7\Tests.h(85,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\Laborator 6-7\Laborator 6-7\Tests.h(92,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\Laborator 6-7\Laborator 6-7\Tests.h(102,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\Laborator 6-7\Laborator 6-7\Tests.h(109,36): warning C4101: 'exception': unreferenced local variable
+  Laborator 6-7.vcxproj -> C:\Users\Andrei\source\repos\Laborator 6-7\Debug\Laborator 6-7.exe
