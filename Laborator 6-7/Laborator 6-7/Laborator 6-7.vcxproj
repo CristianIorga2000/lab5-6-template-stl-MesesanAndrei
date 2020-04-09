@@ -149,12 +149,12 @@
   <ItemGroup>
     <ClCompile Include="Laborator 6-7.cpp" />
     <ClCompile Include="Repository.cpp" />
-    <ClCompile Include="RezervareCamera.cpp" />
-    <ClCompile Include="Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Console.h" />
     <ClInclude Include="Repository.h" />
     <ClInclude Include="RezervareCamera.h" />
+    <ClInclude Include="Service.h" />
     <ClInclude Include="Tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

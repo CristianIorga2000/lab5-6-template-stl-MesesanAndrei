@@ -22,7 +22,6 @@ public:
 };
 
 
-
 template <class Entitate>
 class Repository
 {

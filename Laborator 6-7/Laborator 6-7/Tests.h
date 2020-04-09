@@ -1,6 +1,7 @@
 #pragma once
 #include "RezervareCamera.h"
 #include "Repository.h"
+#include "Service.h"
 #include <assert.h>
 #include <iostream>
 
@@ -112,3 +113,77 @@ void testRepository(){
 
 }
 
+void testService() {
+	Repository<RezervareCamera> repo{};
+	Service service{ repo };
+	RezervareCamera r1{ 1, "nr1", "tip1", false };
+	RezervareCamera r2{ 2, "nr2", "tip1", true };
+	RezervareCamera r3{ 3, "nr3", "tip2", true };
+	RezervareCamera r4{ 4, "nr4", "tip2", true };
+	RezervareCamera r5{ 5, "nr5", "tip3", false };
+
+	assert(service.getAll().size() == repo.getAll().size());
+
+	try {
+		service.addRezervareCamera(r1.getId(), r1.getNumar(), r1.getTip(), r1.getEliberata());
+		assert(true);
+	}
+	catch (RepositoryException& e) {
+		assert(false);
+	}
+	try {
+		service.addRezervareCamera(r1.getId(), r1.getNumar(), r1.getTip(), r1.getEliberata());
+		assert(false);
+	}
+	catch (RepositoryException& e) {
+		assert(true);
+	}
+
+	try {
+		r1.setNumar("nr_nou");
+		service.updateRezervareCamera(r1.getId(), r1.getNumar(), r1.getTip(), r1.getEliberata());
+		RezervareCamera f = service.findRezervareCamera(r1.getId());
+		assert(f.getNumar().compare(r1.getNumar())==0);
+	}
+	catch (RepositoryException& e) {
+		assert(false);
+	}
+
+	try {
+		service.removeRezervareCamera(r1.getId());
+		assert(true);
+	}
+	catch (RepositoryException& e) {
+		assert(false);
+	}
+	try {
+		service.removeRezervareCamera(r1.getId());
+		assert(false);
+	}
+	catch (RepositoryException& e) {
+		assert(true);
+	}
+
+
+	try {
+		service.addRezervareCamera(r1.getId(), r1.getNumar(), r1.getTip(), r1.getEliberata());
+		service.addRezervareCamera(r2.getId(), r2.getNumar(), r2.getTip(), r2.getEliberata());
+		service.addRezervareCamera(r3.getId(), r3.getNumar(), r3.getTip(), r3.getEliberata());
+		service.addRezervareCamera(r4.getId(), r4.getNumar(), r4.getTip(), r4.getEliberata());
+		service.addRezervareCamera(r5.getId(), r5.getNumar(), r5.getTip(), r5.getEliberata());
+		vector<Statistica> procente = service.computePercentage();
+		Statistica st1{ procente[0] };
+		Statistica st2{ procente[1] };
+		Statistica st3{ procente[2].getTip(),  procente[2].getProcent()};
+		assert(st1.getTip().compare("tip3") == 0);
+		assert(st1.getProcent() == 0);
+		assert(st2.getTip().compare("tip1") == 0);
+		assert(st2.getProcent() == 50);
+		assert(st3.getTip().compare("tip2") == 0);
+		assert(st3.getProcent() == 100);
+	}
+	catch (RepositoryException& e) {
+		assert(false);
+	}
+
+}
