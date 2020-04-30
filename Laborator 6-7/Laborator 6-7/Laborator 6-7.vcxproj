@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClCompile Include="Laborator 6-7.cpp" />
     <ClCompile Include="Repository.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console.h" />
@@ -156,6 +157,10 @@
     <ClInclude Include="RezervareCamera.h" />
     <ClInclude Include="Service.h" />
     <ClInclude Include="Tests.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="date.txt" />
+    <Text Include="date_text.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

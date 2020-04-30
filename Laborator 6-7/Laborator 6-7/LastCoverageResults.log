@@ -1,21 +1,21 @@
-[2020-04-02 13:30:29] [info] Start Program:
-Path:"C:\\Users\\Andrei\\source\\repos\\Laborator 6-7\\Debug\\Laborator 6-7.exe"
+[2020-04-30 11:50:03] [info] Start Program:
+Path:"C:\\Users\\Andrei\\source\\repos\\lab5-6-template-stl-MesesanAndrei\\Laborator 6-7\\Debug\\Laborator 6-7.exe"
 Arguments:
-Working directory: "C:\\Users\\Andrei\\source\\repos\\Laborator 6-7\\Laborator 6-7\\"
-Modules: Selected: C:\Users\Andrei\source\repos\Laborator 6-7\Debug\Laborator 6-7.exe Excluded: 
-Sources: Selected: C:\Users\Andrei\source\repos\Laborator 6-7\Laborator 6-7 Excluded: Tests.h Tests.cpp Laborator 6-7.cpp 
+Working directory: "C:\\Users\\Andrei\\source\\repos\\lab5-6-template-stl-MesesanAndrei\\Laborator 6-7\\Laborator 6-7\\"
+Modules: Selected: C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Debug\Laborator 6-7.exe Excluded: 
+Sources: Selected: C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7 Excluded: Tests.h Console.h Laborator 6-7.cpp 
 Log Level: Normal
 Cover Children: 0
 Aggregate by file: 1
 Continue after C++ exception: 0
 Optimized build support: 0
-Export: binary C:\Users\Andrei\AppData\Local\Temp\1s0n32cs.xqx 
+Export: binary C:\Users\Andrei\AppData\Local\Temp\nhmr5d3z.d2d 
 Input coverage: 
 Unified diff: 
 Excluded line regular expressions: 
 Substitute pdb source paths: 
 
-[2020-04-02 13:30:29] [info] Module: C:\Users\Andrei\source\repos\Laborator 6-7\Debug\Laborator 6-7.exe is selected because it matches selected pattern: C:\Users\Andrei\source\repos\Laborator 6-7\Debug\Laborator 6-7.exe
-[2020-04-02 13:30:29] [info] ----------------------------------------------------
-[2020-04-02 13:30:29] [info] Coverage binary generated in file: C:\Users\Andrei\AppData\Local\Temp\1s0n32cs.xqx
-[2020-04-02 13:30:29] [info] ----------------------------------------------------
+[2020-04-30 11:50:03] [info] Module: C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Debug\Laborator 6-7.exe is selected because it matches selected pattern: C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Debug\Laborator 6-7.exe
+[2020-04-30 11:50:05] [info] ----------------------------------------------------
+[2020-04-30 11:50:05] [info] Coverage binary generated in file: C:\Users\Andrei\AppData\Local\Temp\nhmr5d3z.d2d
+[2020-04-30 11:50:05] [info] ----------------------------------------------------

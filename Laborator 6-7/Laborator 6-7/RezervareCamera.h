@@ -105,5 +105,34 @@ public:
 		out << rezervare.getId() << " " << rezervare.getNumar() << " " << rezervare.getTip() << " " << rezervare.getEliberata() << " ";
 		return out;
 	}
-
+	friend istream& operator>>(istream& in_stream, RezervareCamera& rez) {
+		int id;
+		string numar;
+		string tip;
+		bool eliberata;
+		if (in_stream.eof()) {
+			return in_stream;
+		}
+		in_stream >> id;
+		rez.setId(id);
+		if (in_stream.eof()) {
+			return in_stream;
+		}
+		in_stream >> numar; 
+		rez.setNumar(numar);
+		if (in_stream.eof()) {
+			return in_stream;
+		}
+		in_stream >> tip; 
+		rez.setTip(tip);
+		if (in_stream.eof()) {
+			return in_stream;
+		}
+		in_stream >> eliberata;
+		rez.setEliberata(eliberata);
+		if (in_stream.eof()) {
+			return in_stream;
+		}
+		return in_stream;
+	}
 };

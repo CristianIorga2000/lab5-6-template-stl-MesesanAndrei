@@ -39,7 +39,8 @@ void testDomain(){
 }
 
 void testRepository(){
-	Repository<RezervareCamera> repo{};
+	//Repository<RezervareCamera> repo{};
+	FileRepository<RezervareCamera> repo("C:\\Users\\Andrei\\source\\repos\\lab5-6-template-stl-MesesanAndrei\\Laborator 6-7\\Laborator 6-7\\date_text.txt");
 
 
 	RezervareCamera r1{ 1, "nr1", "tip1", false };
@@ -110,7 +111,7 @@ void testRepository(){
 	catch (const RepositoryException& exception) {
 		assert(true);
 	}
-
+	repo.remove(r2);
 }
 
 void testService() {

@@ -1,1 +1,20 @@
-﻿  Laborator 6-7.vcxproj -> C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Debug\Laborator 6-7.exe
+﻿  Laborator 6-7.cpp
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Service.h(98,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Service.h(101,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Service.h(114,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Service.h(118,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(57,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(66,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(75,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(87,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(94,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(104,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(111,36): warning C4101: 'exception': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(132,30): warning C4101: 'e': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(139,30): warning C4101: 'e': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(149,30): warning C4101: 'e': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(157,30): warning C4101: 'e': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(164,30): warning C4101: 'e': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Tests.h(186,30): warning C4101: 'e': unreferenced local variable
+C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Laborator 6-7\Console.h(156,21): warning C4018: '<': signed/unsigned mismatch
+  Laborator 6-7.vcxproj -> C:\Users\Andrei\source\repos\lab5-6-template-stl-MesesanAndrei\Laborator 6-7\Debug\Laborator 6-7.exe

@@ -2,6 +2,8 @@
 #include <vector>
 #include <string>
 #include <ostream>
+#include <iostream>
+#include <fstream>
 #include <algorithm>
 #include "RezervareCamera.h"
 
@@ -21,9 +23,27 @@ public:
 	}
 };
 
+template <class Entitate>
+class RepositoryInterface
+{
+private:
+	virtual bool exists(const Entitate& apartment)const = 0;
+public:
+	virtual ~RepositoryInterface() {};
+	virtual void add(const Entitate& entitate) = 0;
+
+	virtual void update(const Entitate& entitate) = 0;
+
+	virtual void remove(const Entitate& entitate) = 0;
+
+	virtual const Entitate& find(int id) const = 0;
+
+	virtual const vector<Entitate>& getAll()const noexcept = 0;
+};
+
 
 template <class Entitate>
-class Repository
+class Repository: RepositoryInterface<Entitate>
 {
 private:
 	vector<Entitate> entitates;
@@ -101,3 +121,52 @@ public:
 	}
 };
 
+template <class Entitate>
+class FileRepository : public Repository<Entitate> {
+private:
+	string __fileName;
+	void __loadData() {
+		ifstream file_read(__fileName);
+		/*if (!file_read.is_open()) {
+			throw RepositoryException("Ërror: Unable to open file: " + __fileName);
+		}*/
+		while (!file_read.eof()) {
+			Entitate entitate{};
+
+			file_read >>entitate;
+			if (entitate.getId() > 0) {
+				Repository<Entitate>::add(entitate);
+			}
+		}
+		file_read.close();
+	}
+	void __saveData() {
+		ofstream file_write(__fileName);
+		/*if (!file_write.is_open()) {
+			throw RepositoryException("Ërror: Unable to open file: " + __fileName);
+		}*/
+		for (const Entitate& entitate : Repository<Entitate>::getAll()) {
+			file_write << entitate<<"\n";
+		}
+		file_write.close();
+	}
+public:
+	FileRepository(string fileName) : Repository<Entitate>(), __fileName{ fileName } {
+		__loadData();
+	};
+
+	void add(const Entitate& entitate) override{
+		Repository<Entitate>::add(entitate);
+		__saveData();
+	}
+
+	void update(const Entitate& entitate)override  {
+		Repository<Entitate>::update(entitate);
+		__saveData();
+	}
+
+	void remove(const Entitate& entitate)override {
+		Repository<Entitate>::remove(entitate);
+		__saveData();
+	}
+};
